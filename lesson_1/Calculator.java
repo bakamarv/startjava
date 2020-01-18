@@ -2,47 +2,35 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-        int a;
-        int b;
-
-        char d;
-
+        int firstNum;
+        int secondNum;
+        char oper;
         System.out.println("Введите первое число ");
-
         Scanner inputFigure = new Scanner (System.in);
-        a = inputFigure.nextInt ();
-
+        firstNum = inputFigure.nextInt ();
         System.out.println("Введите второе число ");
-        b = inputFigure.nextInt ();
-
+        secondNum = inputFigure.nextInt ();
         System.out.println("Введите оператор ");
         inputFigure.nextLine();
-        d = inputFigure.nextLine().charAt(0);
+        oper = inputFigure.nextLine().charAt(0);
         System.out.println("Результат ");
-
-        if (d == '+') {
-            System.out.println( a+b);
+        if (oper == '+') {
+            System.out.println(firstNum + secondNum);
         }
-
-        if (d == '-') {
-            System.out.println( a-b);
+        if (oper == '-') {
+            System.out.println(firstNum -secondNum);
         }
-
-        if (d == '*') {
-            System.out.println( a*b);
+        if (oper == '*') {
+            System.out.println(firstNum * secondNum);
         }
-
-        if (d == '/') {
-
-            System.out.println( a/b);
+        if (oper == '/') {
+            System.out.println(firstNum / secondNum);
         }
-        if (d == '^') {
-            System.out.println( a^b);
+        if (oper == '^') {
+            System.out.println(firstNum ^ secondNum);
         }
-
-        if (d == '%') {
-            System.out.println( a%b);
+        if (oper == '%') {
+            System.out.println(firstNum % secondNum);
         }
-
     }
 }
