@@ -1,25 +1,30 @@
 
 public class Cycle {
     public static void main(String[] args) {
+
         System.out.println ("Цикл for");
         for (int i = 0; i <= 20; i++) {
              System.out.println(i);
         }
+
         System.out.println ("Цикл while");
-        int i;
-        i = 6;
-        while (i>=-6) {
-            System.out.println(i);
-            i = i-2;
+        int counter;
+        counter = 6;
+        while (counter>=-6) {
+            System.out.println(counter);
+            counter = counter-2;
         }
+
         System.out.println("Цикл do while");
-        int j;
-        j = 10;
+        int counterNech;
+        int sumNech = 0;
+        counterNech = 10;
         do {
-            if (j % 2 > 0){
-                System.out.println(i);
+            if (counterNech % 2 > 0){
+                sumNech = sumNech + counterNech;
             }
-            j = j+1;
-        } while (j<20);
+            counterNech = counterNech + 1;
+        } while (counterNech< 20);
+        System.out.println(sumNech);
     }
 }
