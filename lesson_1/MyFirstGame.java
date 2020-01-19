@@ -3,19 +3,17 @@ import java.util.Scanner;
 
 public class MyFirstGame {
     public static void main(String[] args) {
-        int i = -1;
-        int number;
-
+        int userNum = -1;
+        int compNum;
         Random rnd = new Random();
-        number = rnd.nextInt(101);
+        compNum = rnd.nextInt(101);
         System.out.println("Угадайте число от 0 до 100 ");
         Scanner scanner = new Scanner(System.in);
-        while (i != number) {
-            i = scanner.nextInt();
-            if (number > i) {
+        while (userNum != compNum) {
+            userNum = scanner.nextInt();
+            if (compNum > userNum) {
                 System.out.println("Введенное вами число меньше того, что загадал компьютер");
-            }
-            else {
+            } else {
                 System.out.println("Введенное вами число больше того, что загадал компьютер");
             }
         }
