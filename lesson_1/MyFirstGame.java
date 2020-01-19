@@ -9,6 +9,7 @@ public class MyFirstGame {
         compNum = rnd.nextInt(101);
         System.out.println("Угадайте число от 0 до 100 ");
         Scanner scanner = new Scanner(System.in);
+
         while (userNum != compNum) {
             userNum = scanner.nextInt();
             if (compNum > userNum) {
