@@ -2,39 +2,34 @@ import java.util.Scanner;
 
 public class ConditionalStatement {
     public static void main(String[] args) {
-        int age;
-        char pol;
-        double rost;
-        char name;
-
-        System.out.print(" Введите ваш возраст");
+        System.out.println(" Введите ваш возраст");
         Scanner scanner = new Scanner(System.in);
-        age = scanner.nextInt();
+        int age = scanner.nextInt();
         if (age > 20) {
-            System.out.println("Ваш возраст больше 20= "+ age);
+            System.out.println("Ваш возраст больше 20 = "+ age);
         }
 
         System.out.println("Введите ваш пол M или W ");
         scanner.nextLine();
-        pol = scanner.nextLine().charAt(0);
-        if (pol == 'M') {
+        char gender  = scanner.nextLine().charAt(0);
+        if (gender  == 'M') {
             System.out.println("Мужской");
         }
-        if (pol != 'M') {
+        if (gender  != 'M') {
             System.out.println("Не мужской");
         }
 
-        System.out.print("Введите свой рост (в метрах)");
-        rost = scanner.nextDouble ();
-        if (rost < 1.8) {
+        System.out.println("Введите свой рост (в метрах)");
+        double height = scanner.nextDouble ();
+        if (height < 1.8) {
             System.out.println("Ваш рост менее 1.8");
         } else {
             System.out.println("Ваш рост более 1.8");
         }
 
-        System.out.print("Введите первую букву вашего имени (в транскрибции)");
+        System.out.println("Введите первую букву вашего имени (в транскрибции) ");
         scanner.nextLine();
-        name = scanner.nextLine().charAt(0);
+        char name = scanner.nextLine().charAt(0);
         if (name == 'M') {
             System.out.println("Ваше имя начинается с M");
         } else if (name == 'I') {

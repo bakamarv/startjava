@@ -4,9 +4,8 @@ import java.util.Scanner;
 public class MyFirstGame {
     public static void main(String[] args) {
         int userNum = -1;
-        int compNum;
         Random rnd = new Random();
-        compNum = rnd.nextInt(101);
+        int compNum = rnd.nextInt(101);
         System.out.println("Угадайте число от 0 до 100 ");
         Scanner scanner = new Scanner(System.in);
 

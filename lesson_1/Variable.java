@@ -8,7 +8,7 @@ public class Variable {
         char treadsNumber = '4';
         boolean isSecureKey = true;
 
-        System.out.println("Установленная память "+ ram +" GB");
+        System.out.println("Установленная память " + ram + " GB");
         System.out.println("Количество ядер процессора " + cpuCore);
         System.out.println("Расчетная мощность " + tpd + " W");
         System.out.println("Базовая частота процессора " + cpuSpeed + " GHz");
