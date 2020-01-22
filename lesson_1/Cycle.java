@@ -6,8 +6,8 @@ public class Cycle {
         }
 
         System.out.println ("Цикл while");
-        int counter =6;
-        while (counter >=-6) {
+        int counter = 6;
+        while (counter >= -6) {
             System.out.println(counter);
             counter -= 2;
         }
@@ -16,7 +16,7 @@ public class Cycle {
         int counterOdd = 10;
         int sumOdd = 0;
         do {
-            if (counterOdd % 2 > 0){
+            if (counterOdd % 2 > 0) {
                 sumOdd += counterOdd;
             }
             counterOdd++;

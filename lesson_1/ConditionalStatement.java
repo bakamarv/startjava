@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ConditionalStatement {
     public static void main(String[] args) {
-        System.out.println(" Введите ваш возраст");
+        System.out.println("Введите ваш возраст");
         Scanner scanner = new Scanner(System.in);
         int age = scanner.nextInt();
         if (age > 20) {
@@ -11,11 +11,11 @@ public class ConditionalStatement {
 
         System.out.println("Введите ваш пол M или W ");
         scanner.nextLine();
-        char gender  = scanner.nextLine().charAt(0);
-        if (gender  == 'M') {
+        char gender = scanner.nextLine().charAt(0);
+        if (gender == 'M') {
             System.out.println("Мужской");
         }
-        if (gender  != 'M') {
+        if (gender != 'M') {
             System.out.println("Не мужской");
         }
 
@@ -29,10 +29,10 @@ public class ConditionalStatement {
 
         System.out.println("Введите первую букву вашего имени (в транскрибции) ");
         scanner.nextLine();
-        char name = scanner.nextLine().charAt(0);
-        if (name == 'M') {
+        char firstNameLatter = scanner.nextLine().charAt(0);
+        if (firstNameLatter == 'M') {
             System.out.println("Ваше имя начинается с M");
-        } else if (name == 'I') {
+        } else if (firstNameLatter == 'I') {
             System.out.println("Ваше имя начинается с I ");
         } else {
             System.out.println("Ваше имя начинается ни с M и не с I");
