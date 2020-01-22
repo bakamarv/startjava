@@ -22,7 +22,7 @@ public class Calculator {
             System.out.println(firstNum / secondNum);
         } else if (operator == '^') {
              int result = 1;
-             for (int i = 1; i <= secondNum; i++) {
+             for (int i = 0; i <= secondNum; i++) {
                 result *= firstNum;
              }
             System.out.println(result);
