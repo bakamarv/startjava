@@ -23,6 +23,5 @@ public class WolfTest {
         myWolf.run();
         myWolf.hunt();
         myWolf.howl();
-
     }
 }
