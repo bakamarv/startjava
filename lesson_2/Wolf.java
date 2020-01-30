@@ -6,26 +6,6 @@ public class Wolf {
     private float age;
     private String color;
 
-    void go() {
-
-    }
-
-    void sit() {
-
-    }
-
-    void run() {
-
-    }
-
-    void howl() {
-        System.out.println("Owooooooo");
-    }
-
-    void hunt() {
-
-    }
-
     public String getName() {
         return name;
     }
@@ -68,6 +48,26 @@ public class Wolf {
         } else {
             this.age = age;
         }
+    }
+
+    void go() {
+
+    }
+
+    void sit() {
+
+    }
+
+    void run() {
+
+    }
+
+    void howl() {
+        System.out.println("Owooooooo");
+    }
+
+    void hunt() {
+
     }
 }
 

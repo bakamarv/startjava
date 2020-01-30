@@ -1,7 +1,6 @@
 public class WolfTest {
 
     public static void main(String[] args) {
-
         Wolf myWolf = new Wolf();
         /*myWolf.name = "Misha";
         myWolf.age = 7;
