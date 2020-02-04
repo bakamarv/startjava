@@ -31,7 +31,7 @@ public class Calculator {
     public int calculate() {
         int result = 0;
 
-        switch (this.operator) {
+        switch (operator) {
             case '+':
                 result = firstNum + secondNum;
                 break;
@@ -51,10 +51,10 @@ public class Calculator {
                 }
                 break;
             case '%':
-                result =firstNum % secondNum;
+                result = firstNum % secondNum;
                 break;
             default:
-                result = -1;
+                result = 0;
                 break;
         }
         return result;
