@@ -29,34 +29,27 @@ public class Calculator {
     }
 
     public int calculate() {
-        int result = 0;
 
         switch (operator) {
             case '+':
-                result = firstNum + secondNum;
-                break;
+                return firstNum + secondNum;
             case '-' :
-                result = firstNum -secondNum;
-                break;
+                return firstNum -secondNum;
             case '*' :
-                result = firstNum * secondNum;
-                break;
+                return firstNum * secondNum;
             case '/':
-                result = firstNum / secondNum;
-                break;
+                return firstNum / secondNum;
             case '^':
-                result = 1;
+                int result = 1;
                 for (int i = 0; i <= secondNum; i++) {
                     result *= firstNum;
                 }
-                break;
+                return result;
             case '%':
-                result = firstNum % secondNum;
-                break;
+                return firstNum % secondNum;
             default:
-                result = 0;
-                break;
+                System.out.println("Недопустимый знак математической операции");
+                return 0;
         }
-        return result;
     }
 }
