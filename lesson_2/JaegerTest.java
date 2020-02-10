@@ -20,6 +20,8 @@ public class JaegerTest {
         System.out.println(firstJaeger.getSpeed());
         System.out.println(firstJaeger.getStrength());
         System.out.println(firstJaeger.getArmot());
+        firstJaeger.move();
+        firstJaeger.useVortexCannon();
 
 
         System.out.println("Второй робот:");
@@ -41,5 +43,7 @@ public class JaegerTest {
         System.out.println(secondJaeger.getStrength());
         System.out.println(secondJaeger.getArmot());
         System.out.println(secondJaeger.scanKaiju());
+        secondJaeger.move();
+        secondJaeger.useVortexCannon();
     }
 }

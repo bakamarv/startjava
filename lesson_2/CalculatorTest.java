@@ -19,7 +19,6 @@ public class CalculatorTest {
             calculator.setSecondNum(scanner.nextInt());
             scanner.nextLine();
             System.out.println("Результат: " + calculator.calculate());
-
             do {
                 System.out.print("Хотите продолжить? [yes/no]: ");
                 nextCalculation = scanner.nextLine();
