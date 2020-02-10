@@ -11,6 +11,29 @@ public class Jaeger {
     private int strength;
     private int armot;
 
+    public Jaeger (String modelName, String mark, String origin, float height, float weight, int speed, int strength, int armot) {
+        this.modelName = modelName;
+        this.mark = mark;
+        this.origin = origin;
+        this.height = height;
+        this.weight = weight;
+        this.speed = speed;
+        this.strength = strength;
+        this.armot = armot;
+    }
+
+        public Jaeger (String modelName, String mark, String origin, float height, float weight) {
+        this.modelName = modelName;
+        this.mark = mark;
+        this.origin = origin;
+        this.height = height;
+        this.weight = weight;
+        this.speed = speed;
+        this.strength = strength;
+        this.armot = armot;
+    }
+
+
     public void setModelName(String modelName) {
         this.modelName =modelName;
     }
@@ -80,17 +103,16 @@ public class Jaeger {
     }
 
     void move() {
-
+        System.out.println("вызван метод move для робота "+ modelName);
     }
 
     String scanKaiju() {
         System.out.println("Введите Кайдзю:");
         Scanner scanner = new Scanner(System.in);
-        scanner.nextLine();
         return scanner.nextLine();
     }
 
     void useVortexCannon() {
-
+        System.out.println("вызван метод useVortexCannon для робота "+ modelName);
     }
 }
