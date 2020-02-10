@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Jaeger {
 
-    private String modelName = "Bracer Phoenix";
+    private String modelName;
     private String mark;
     private String origin;
     private float height;
@@ -80,16 +80,17 @@ public class Jaeger {
     }
 
     void move() {
-        System.out.println("вызван метод move для робота "+ modelName);
+
     }
 
     String scanKaiju() {
         System.out.println("Введите Кайдзю:");
         Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
         return scanner.nextLine();
     }
 
     void useVortexCannon() {
-        System.out.println("вызван метод useVortexCannon для робота "+ modelName);
+
     }
 }
