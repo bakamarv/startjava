@@ -2,7 +2,7 @@ public class JaegerTest {
 
     public static void main(String[] args) {
         System.out.println("Первый робот:");
-        Jaeger firstJaeger = new Jaeger("Bracer Phoenix", "Mark-5","USA",70.7f,2.1f,3,8,9);
+        Jaeger firstJaeger = new Jaeger("Bracer Phoenix", "Mark-5","USA", 70.7f, 2.1f, 3, 8, 9);
 
         System.out.println(firstJaeger.getMark());
         System.out.println(firstJaeger.getOrigin());
@@ -15,7 +15,7 @@ public class JaegerTest {
         firstJaeger.useVortexCannon();
 
         System.out.println("Второй робот:");
-        Jaeger secondJaeger = new Jaeger("Coyote Tango","Mark-1","Japan",85.34f,2.3f);
+        Jaeger secondJaeger = new Jaeger("Coyote Tango", "Mark-1", "Japan", 85.34f, 2.3f);
         secondJaeger.setSpeed(1);
         secondJaeger.setStrength(6);
         secondJaeger.setArmot(5);

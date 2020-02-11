@@ -1,4 +1,3 @@
-
 public class Calculator {
 
     private int firstNum;
@@ -16,6 +15,7 @@ public class Calculator {
     public int getSecondNum() {
         return this.secondNum;
     }
+
     public void setSecondNum(int secondNum) {
         this.secondNum = secondNum;
     }
@@ -29,7 +29,6 @@ public class Calculator {
     }
 
     public int calculate() {
-
         switch (operator) {
             case '+':
                 return firstNum + secondNum;

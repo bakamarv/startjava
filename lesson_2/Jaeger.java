@@ -11,7 +11,7 @@ public class Jaeger {
     private int strength;
     private int armot;
 
-    public Jaeger (String modelName, String mark, String origin, float height, float weight, int speed, int strength, int armot) {
+    public Jaeger(String modelName, String mark, String origin, float height, float weight, int speed, int strength, int armot) {
         this.modelName = modelName;
         this.mark = mark;
         this.origin = origin;
@@ -22,7 +22,7 @@ public class Jaeger {
         this.armot = armot;
     }
 
-        public Jaeger (String modelName, String mark, String origin, float height, float weight) {
+    public Jaeger(String modelName, String mark, String origin, float height, float weight) {
         this.modelName = modelName;
         this.mark = mark;
         this.origin = origin;
@@ -32,10 +32,9 @@ public class Jaeger {
         this.strength = strength;
         this.armot = armot;
     }
-
 
     public void setModelName(String modelName) {
-        this.modelName =modelName;
+        this.modelName = modelName;
     }
 
     public String getModelName() {
@@ -43,7 +42,7 @@ public class Jaeger {
     }
 
     public void setMark(String mark) {
-        this.mark =mark;
+        this.mark = mark;
     }
 
     public String getMark() {
@@ -51,7 +50,7 @@ public class Jaeger {
     }
 
     public void setOrigin(String origin) {
-        this.origin =origin;
+        this.origin = origin;
     }
 
     public String getOrigin() {
@@ -59,7 +58,7 @@ public class Jaeger {
     }
 
     public void setHeight(float height) {
-        this.height =height;
+        this.height = height;
     }
 
     public float getHeight() {
@@ -67,7 +66,7 @@ public class Jaeger {
     }
 
     public void setWeight(float weight) {
-        this.weight =weight;
+        this.weight = weight;
     }
 
     public float getWeight() {
@@ -75,7 +74,7 @@ public class Jaeger {
     }
 
     public void setSpeed(int speed) {
-        this.speed =speed;
+        this.speed = speed;
     }
 
     public int getSpeed() {
@@ -83,7 +82,7 @@ public class Jaeger {
     }
 
     public void setStrength(int strength) {
-        this.strength =strength;
+        this.strength = strength;
     }
 
     public int getStrength() {
@@ -91,7 +90,7 @@ public class Jaeger {
     }
 
     public void setArmot(int armot) {
-        this.armot =armot;
+        this.armot = armot;
     }
 
     public int getArmot() {
@@ -103,7 +102,7 @@ public class Jaeger {
     }
 
     void move() {
-        System.out.println("вызван метод move для робота "+ modelName);
+        System.out.println("вызван метод move для робота " + modelName);
     }
 
     String scanKaiju() {
@@ -113,6 +112,6 @@ public class Jaeger {
     }
 
     void useVortexCannon() {
-        System.out.println("вызван метод useVortexCannon для робота "+ modelName);
+        System.out.println("вызван метод useVortexCannon для робота " + modelName);
     }
 }
