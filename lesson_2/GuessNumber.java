@@ -12,25 +12,24 @@ public class GuessNumber {
     }
 
     public void startGame() {
-        Random rnd = new Random();
         Scanner scanner = new Scanner(System.in);
+        Random rnd = new Random();
+        number = rnd.nextInt(101);
+        System.out.println("Загадано число от 0 до 100 ");
+           //guess.startGame();
+        do {
+            System.out.println(player1.getName() + ", угадайте число от 0 до 100 ");
+            player1.setNumber(scanner.nextInt());
+            if (checkNumber(player1)) {
+                break;
+            }
 
-            number = rnd.nextInt(101);
-            System.out.println("Загадано число от 0 до 100 ");
-               //guess.startGame();
-            do {
-                System.out.println(player1.getName() + ", угадайте число от 0 до 100 ");
-                player1.setNumber(scanner.nextInt());
-                if (checkNumber(player1)) {
-                    break;
-                }
-
-                System.out.println(player2.getName() + ", угадайте число от 0 до 100 ");
-                player2.setNumber(scanner.nextInt());
-                if (checkNumber(player2)) {
-                    break;
-                }
-            } while (true);
+            System.out.println(player2.getName() + ", угадайте число от 0 до 100 ");
+            player2.setNumber(scanner.nextInt());
+            if (checkNumber(player2)) {
+                break;
+            }
+        } while (true);
     }
 
     private boolean checkNumber(Player player) {
