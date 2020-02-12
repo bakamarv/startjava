@@ -11,24 +11,10 @@ public class GuessNumber {
         this.player2 = player2;
     }
 
-    public boolean checkNumber(Player player) {
-        if (number > player.getNumber()) {
-            System.out.println(player.getName() + ", введенное вами число меньше того, что загадал компьютер");
-        } else if (number < player.getNumber()) {
-            System.out.println(player.getName() + ", введенное вами число больше того, что загадал компьютер");
-        } else {
-            System.out.println(player.getName() + ", вы угадали!");
-            return true;
-        }
-        return false;
-    }
-
-   public void startGame() {
+    public void startGame() {
         Random rnd = new Random();
         Scanner scanner = new Scanner(System.in);
 
-        String nextRound;
-        do {
             number = rnd.nextInt(101);
             System.out.println("Загадано число от 0 до 100 ");
                //guess.startGame();
@@ -45,12 +31,17 @@ public class GuessNumber {
                     break;
                 }
             } while (true);
+    }
 
-            do {
-                System.out.print("Хотите продолжить? [yes/no]: ");
-                nextRound = scanner.nextLine();
-            } while (!nextRound.equals("yes") && !nextRound.equals("no"));
-        } while (nextRound.equals("yes"));
+    private boolean checkNumber(Player player) {
+        if (number > player.getNumber()) {
+            System.out.println(player.getName() + ", введенное вами число меньше того, что загадал компьютер");
+        } else if (number < player.getNumber()) {
+            System.out.println(player.getName() + ", введенное вами число больше того, что загадал компьютер");
+        } else {
+            System.out.println(player.getName() + ", вы угадали!");
+            return true;
+        }
+        return false;
     }
 }
-
